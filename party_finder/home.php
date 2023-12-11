@@ -11,7 +11,7 @@
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php 
-                $products = $conn->query("SELECT * FROM `products` where status = 1 order by rand() limit 8 ");
+                $products = $conn->query("SELECT * FROM `products` where status = 1 and category_id != 9 order by rand() limit 8 ");
                 while($row = $products->fetch_assoc()):
                     $upload_path = base_app.'/uploads/product_'.$row['id'];
                     $img = "";

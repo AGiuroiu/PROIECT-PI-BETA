@@ -36,6 +36,8 @@
                         </li>
                         <?php endif; ?>
                         <?php endwhile; ?>
+                        <li class="nav-item"><a class="nav-link" href="./?p=Map">Map</a></li>
+
                         <li class="nav-item"><a class="nav-link" href="./?p=about">About</a></li>
                     </ul>
                     <div class="d-flex align-items-center">

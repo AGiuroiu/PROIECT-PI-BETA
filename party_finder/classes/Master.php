@@ -141,7 +141,7 @@ Class Master extends DBConnection {
 			if(!empty($data)) $data .=",";
 				$data .= " `description`='".addslashes(htmlentities($description))."' ";
 		}
-		$check = $this->conn->query("SELECT * FROM `products` where `product_name` = '{$product_name}' ".(!empty($id) ? " and id != {$id} " : "")." ")->num_rows;
+		/* $check = $this->conn->query("SELECT * FROM `products` where `product_name` = '{$product_name}' ".(!empty($id) ? " and id != {$id} " : "")." ")->num_rows;
 		if($this->capture_err())
 			return $this->capture_err();
 		if($check > 0){
@@ -149,7 +149,7 @@ Class Master extends DBConnection {
 			$resp['msg'] = "Product already exist.";
 			return json_encode($resp);
 			exit;
-		}
+		}*/
 		if(empty($id)){
 			$sql = "INSERT INTO `products` set {$data} ";
 			$save = $this->conn->query($sql);

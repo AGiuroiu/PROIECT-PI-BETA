@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@googleapis/docs": "^3.0.0",
+    "@types/googlemaps": "^3.43.3",
+    "google": "^2.1.0",
+    "googleapis": "^129.0.0",
+    "googlemap": "^1.0.4",
+    "map": "^1.0.1"
+  }
+}
